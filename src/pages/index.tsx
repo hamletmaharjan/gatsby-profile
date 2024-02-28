@@ -98,7 +98,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <h1 style={headingStyles}>
         Hello
         <br />
-        <span style={headingAccentStyles}>— Welcome to my world! 🎉🎉🎉</span>
+        <span style={headingAccentStyles}>— Welcome! 🎉🎉🎉</span>
       </h1>
       
     </main>
