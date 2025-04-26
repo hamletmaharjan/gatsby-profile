@@ -45,7 +45,7 @@ const IndexPage: React.FC<PageProps> = () => {
           Hello, I’m <span style={headingAccentStyles}>Hamlet Maharjan</span> 👋
         </h1>
         <p>
-          I’m a full-stack developer specializing in React, NestJS, and AWS.
+          I’m a software developer specializing in React, NestJS, and AWS.
           Welcome to my portfolio!
         </p>
       </header>
