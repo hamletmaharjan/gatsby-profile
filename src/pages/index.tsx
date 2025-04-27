@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { SEO } from "../components/seo";
+import { Navbar } from "../components/navbar";
 
 const pageStyles = {
   color: "#232129",
@@ -39,17 +40,18 @@ const linkStyle = {
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles}>
-      <header style={sectionStyles}>
-        <h1 style={headingStyles}>
-          Hello, I’m <span style={headingAccentStyles}>Hamlet Maharjan</span> 👋
-        </h1>
-        <p>
-          I’m a software developer specializing in React, NestJS, and AWS.
-          Welcome to my portfolio!
-        </p>
-      </header>
-    </main>
+    <>
+      <Navbar />
+      <main style={pageStyles}>
+        <header style={sectionStyles}>
+          <h1 style={headingStyles}>
+            Hello, I’m <span style={headingAccentStyles}>Hamlet Maharjan</span>{" "}
+            👋
+          </h1>
+          <p>Welcome</p>
+        </header>
+      </main>
+    </>
   );
 };
 

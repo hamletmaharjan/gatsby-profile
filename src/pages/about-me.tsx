@@ -1,4 +1,5 @@
 import React from "react";
+import { Navbar } from "../components/navbar";
 
 const pageStyles = {
   color: "#232129",
@@ -25,12 +26,15 @@ const paragraphStyles = {
 
 const AboutMe = () => {
   return (
-    <main style={pageStyles}>
-      <section style={sectionStyles}>
-        <h1 style={headingStyles}>About Me</h1>
-        <p style={paragraphStyles}>Work in progress</p>
-      </section>
-    </main>
+    <>
+      <Navbar />
+      <main style={pageStyles}>
+        <section style={sectionStyles}>
+          <h1 style={headingStyles}>About Me</h1>
+          <p style={paragraphStyles}>Work in progress</p>
+        </section>
+      </main>
+    </>
   );
 };
 
