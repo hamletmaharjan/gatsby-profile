@@ -1,9 +1,9 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Hamlet Maharjan`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://hamlet.com.np`,
     description: `Testing something and incliding hamlet maharjan in description for no reason`,
     image: `/gatsby-icon.png`,
   },
@@ -31,6 +31,6 @@ const config: GatsbyConfig = {
       },
     },
   ],
-}
+};
 
-export default config
+export default config;
