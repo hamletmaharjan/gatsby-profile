@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const pageStyles = {
   color: "#232129",
-  padding: "64px 32px",
+  padding: "64px 16px", // Adjust padding for smaller screens
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   maxWidth: 960,
   margin: "0 auto",
@@ -39,7 +39,7 @@ const paragraphStyles = {
 
 const projectGridStyles = {
   display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)", // 2 columns for desktop
+  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", // Responsive grid
   gap: "24px",
 };
 
