@@ -5,14 +5,14 @@ import { Navbar } from "../components/navbar";
 
 const pageStyles = {
   color: "#232129",
-  padding: "64px 32px",
+  padding: "64px 16px", // Adjust padding for smaller screens
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   maxWidth: 960,
   margin: "0 auto",
 };
 
 const sectionStyles = {
-  marginBottom: "48px",
+  marginBottom: "64px",
 };
 
 const headingStyles = {
