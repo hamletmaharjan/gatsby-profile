@@ -26,7 +26,6 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { to: "/", label: "Home" },
     { to: "/portfolio", label: "Portfolio" },
     { to: "/about-me", label: "About" },
     { to: "/blogs", label: "Blogs" },
@@ -60,7 +59,7 @@ export const Navbar: React.FC = () => {
                 color: "#232129",
                 textDecoration: "none",
                 padding: "8px 16px",
-                ...(activePath === to ? { color: "#663399" } : {}),
+                ...(activePath.includes(to) ? { color: "#663399" } : {}),
               }}
             >
               {label}
@@ -92,7 +91,7 @@ export const Navbar: React.FC = () => {
                     fontSize: "1rem",
                     color: "#232129",
                     textDecoration: "none",
-                    ...(activePath === to ? { color: "#663399" } : {}),
+                    ...(activePath.includes(to) ? { color: "#663399" } : {}),
                   }}
                   onClick={onClose}
                 >
