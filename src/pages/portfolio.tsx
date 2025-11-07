@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { SEO } from "../components/seo";
 import { Navbar } from "../components/navbar";
 import { StaticImage } from "gatsby-plugin-image";
+import { EXPERIENCES } from "../constants/constants";
 
 const pageStyles = {
   color: "#232129",
@@ -13,7 +14,7 @@ const pageStyles = {
 };
 
 const sectionStyles = {
-  marginBottom: "64px",
+  marginBottom: "48px",
 };
 
 const headingStyles = {
@@ -86,6 +87,39 @@ const contactLinkStyles = {
   textDecoration: "none",
 };
 
+const experiencesSectionStyles = {
+  marginBottom: "64px",
+};
+
+const experienceGrid = {
+  display: "grid",
+  gap: "16px",
+};
+
+const experienceCard = {
+  background: "#fff",
+  padding: "16px",
+  borderRadius: "8px",
+  boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+};
+
+const experienceRole = {
+  fontSize: "1.1rem",
+  fontWeight: 600,
+  marginBottom: "6px",
+};
+
+const experienceCompany = {
+  color: "#663399",
+  marginBottom: "8px",
+};
+
+const experienceMeta = {
+  fontSize: "0.9rem",
+  color: "#555",
+  marginBottom: "8px",
+};
+
 const PortfolioPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -133,10 +167,9 @@ const PortfolioPage: React.FC<PageProps> = () => {
         </section>
 
         {/* Projects Section */}
-        <section style={sectionStyles}>
+        {/* <section style={sectionStyles}>
           <h2 style={subheadingStyles}>Projects</h2>
           <div style={projectGridStyles}>
-            {/* Project 1 */}
             <div style={projectCard}>
               <StaticImage
                 src="../images/doodle-jump.png"
@@ -144,7 +177,16 @@ const PortfolioPage: React.FC<PageProps> = () => {
                 style={projectImage}
                 placeholder="blurred"
               />
-              <h3 style={projectTitle}>Doodle Jump</h3>
+              <h3 style={projectTitle}>
+                <a
+                  href="https://hamletmaharjan.github.io/doodle/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "#232129" }}
+                >
+                  Doodle Jump
+                </a>
+              </h3>
               <p style={paragraphStyles}>
                 A simple game made with vanilla JS using Canvas API.
               </p>
@@ -159,8 +201,6 @@ const PortfolioPage: React.FC<PageProps> = () => {
                 </a>
               </div>
             </div>
-
-            {/* Project 2 */}
             <div style={projectCard}>
               <StaticImage
                 src="../images/placeholder.png"
@@ -184,8 +224,7 @@ const PortfolioPage: React.FC<PageProps> = () => {
                 </a>
               </div>
             </div>
-
-            {/* Project 3 */}
+            {/* Project 3
             <div style={projectCard}>
               <StaticImage
                 src="../images/placeholder.png"
@@ -208,7 +247,21 @@ const PortfolioPage: React.FC<PageProps> = () => {
                   Source Code
                 </a>
               </div>
-            </div>
+            </div> 
+          </div>
+        </section> */}
+
+        <section style={experiencesSectionStyles}>
+          <h2 style={subheadingStyles}>Experiences</h2>
+          <div style={experienceGrid}>
+            {EXPERIENCES.map((exp) => (
+              <div key={exp.period + exp.role}>
+                <div style={experienceRole}>{exp.role}</div>
+                <div style={experienceCompany}>{exp.company}</div>
+                <div style={experienceMeta}>{exp.period}</div>
+                <p style={{ margin: 0 }}>{exp.description}</p>
+              </div>
+            ))}
           </div>
         </section>
 
