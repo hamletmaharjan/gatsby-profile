@@ -633,26 +633,6 @@ function stripBorderArtifacts(html: string): string {
 }
 ```
 
-### 5.9 Wiring in the conference ID
-
-If your knowledge hub should link a meeting record back to its
-video-conferencing link, pull `conferenceData` off the Calendar event
-and pass the ID through the same payload as everything else --- no
-special-casing needed once your payload shape already has room for it:
-
-```typescript
-function buildMeetingPayload(
-  event: GoogleAppsScript.Calendar.Schema.Event,
-): MeetingPayload {
-  return {
-    title: event.summary ?? "",
-    start: event.start?.dateTime ?? event.start?.date ?? "",
-    end: event.end?.dateTime ?? event.end?.date ?? "",
-    conferenceId: event.conferenceData?.conferenceId ?? null,
-  };
-}
-```
-
 ---
 
 ## 6. Putting the attachments section together
