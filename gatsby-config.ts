@@ -87,6 +87,25 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://hamlet.com.np",
+        sitemap: "https://hamlet.com.np/sitemap-0.xml",
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+          },
+        ],
+      },
+    },
   ],
 };
 
