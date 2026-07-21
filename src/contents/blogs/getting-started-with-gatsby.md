@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Gatsby"
-date: "2025-04-28"
+date: "2025-04-29"
 description: "A beginner-friendly guide to setting up your first Gatsby site and understanding how Gatsby works."
 author: "Hamlet Maharjan"
 slug: "getting-started-with-gatsby"
