@@ -1,13 +1,16 @@
 ---
 date: "2026-07-21"
-description: A hands-on walkthrough of building a Gmail & Calendar
+description: "A hands-on walkthrough of building a Gmail & Calendar
   Workspace Add-on with Apps Script and TypeScript --- Auth0 sign-in,
-  CardService UI, and the gnarly edge cases nobody tells you about.
+  CardService UI, and the gnarly edge cases nobody tells you about."
 title: "Building a Google Workspace Add-on with Apps Script: A Practical
   Guide"
 author: "Hamlet Maharjan"
 slug: "building-google-workspace-addon"
 featuredImage: "../../images/addon.jpg"
+experpt: "A hands-on walkthrough of building a Gmail & Calendar
+  Workspace Add-on with Apps Script and TypeScript --- Auth0 sign-in,
+  CardService UI, and the gnarly edge cases nobody tells you about."
 ---
 
 ![addon](../../images/addon.jpg)
