@@ -106,6 +106,12 @@ const config: GatsbyConfig = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-adsense`,
+    //   options: {
+    //     publisherId: `ca-pub-9309967587775978`,
+    //   },
+    // },
   ],
 };
 
