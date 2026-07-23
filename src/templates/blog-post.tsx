@@ -16,13 +16,14 @@ const BlogPost = ({ data }: any) => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(s){s.dataset.zone='11378801',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
           }}
         />
-      </Helmet>
+        <meta name="test-helmet-check" content="hello" />
+      </Helmet> */}
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -114,6 +115,7 @@ const BlogPost = ({ data }: any) => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Box>
         {/* <AdUnit slot="2222222222" /> */}
+        <script src="https://nap5k.com/tag.min.js" data-zone="11378801" async />
       </Container>
     </>
   );
