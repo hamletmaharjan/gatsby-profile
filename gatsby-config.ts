@@ -112,6 +112,7 @@ const config: GatsbyConfig = {
     //     publisherId: `ca-pub-9309967587775978`,
     //   },
     // },
+    `gatsby-plugin-react-helmet`,
   ],
 };
 

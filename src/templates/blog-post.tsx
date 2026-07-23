@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { getImage } from "gatsby-plugin-image";
 import { Navbar } from "../components/navbar";
@@ -15,6 +16,13 @@ const BlogPost = ({ data }: any) => {
 
   return (
     <>
+      <Helmet>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='11378801',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
+          }}
+        />
+      </Helmet>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -105,7 +113,7 @@ const BlogPost = ({ data }: any) => {
         >
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Box>
-        <AdUnit slot="2222222222" />
+        {/* <AdUnit slot="2222222222" /> */}
       </Container>
     </>
   );
