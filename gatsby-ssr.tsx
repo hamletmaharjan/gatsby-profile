@@ -9,6 +9,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     //   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9309967587775978"
     //   crossOrigin="anonymous"
     // />,
-    <script></script>,
+    <meta name="monetag" content="ceb53c5b4bf067f7439edec66e812a01"></meta>,
   ]);
 };
