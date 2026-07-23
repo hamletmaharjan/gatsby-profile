@@ -4,6 +4,7 @@ import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { getImage } from "gatsby-plugin-image";
 import { Navbar } from "../components/navbar";
 import { SEO } from "../components/seo";
+import { AdUnit } from "../components/ad-unit";
 
 const BlogPost = ({ data }: any) => {
   let post = data.markdownRemark;
@@ -104,6 +105,7 @@ const BlogPost = ({ data }: any) => {
         >
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Box>
+        <AdUnit slot="2222222222" />
       </Container>
     </>
   );
